@@ -132,7 +132,7 @@ ul{
 .ideas{
 	font-family: 'Raleway', sans-serif;
 	height: 705px;
-	background: url('img/ideasbg.png') 50% 50% no-repeat;
+	background: url('img/ideasbg.png') 50% 240px no-repeat;
 	background-color: #fbfaf8;
 	padding-top:80px ;
 
@@ -142,7 +142,6 @@ ul{
 .ideas__text{
 	max-width: 775px;
 	margin: 0 auto;
-	margin-bottom: 525px;
 }
 
 .ideas__title{
@@ -184,19 +183,32 @@ ul{
 	color: #615855;
 }
 
-.purchaseStripe__container{
+.puchaseStripe{
   background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   position: absolute;
-  left: 0px;
-  top: 2097px;
-  width: 1920px;
-  height: 150px;
   z-index: 118;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1230px;
+  min-width: 100%;
+  min-height: 150px;
+  
 }
 
+.purchaseStripe__container{
+	margin-top: 45px;
+display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap;
+  align-content:center;
+}
+
+.puchaseStripe__button{
+	margin-top:0;
+	font-size: 14px;
+	padding:17px 18px;
+}
+
+.puchaseStripe__text{
+	text-align:left;
+}
