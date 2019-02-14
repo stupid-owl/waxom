@@ -56,7 +56,8 @@ ul{
 
 .headerLayout{
 	height: 1024px;
-	background: url('img/bgPhoto.png');
+	background: url('img/bgPhoto.png') center center no-repeat;
+	background-size: cover;
 }
 
 .intro__container{
@@ -288,7 +289,7 @@ display: flex;
     left: -150px; /* Положение треугольника */
     bottom:-206px;
 	border: 15px solid transparent; /* Прозрачные границы */
-    border-bottom: 12px solid #fff; /* Добавляем треугольник */
+    border-bottom: 12px solid #fff; /* Добавляем треугольник */
 }
 
 .item__bg_1pic{
@@ -342,5 +343,35 @@ display: flex;
 	margin-bottom: 80px;
 }
 
+.presentation__container{
+	padding-top:210px;
+	background: url('img/presentationBg.png') center -140px no-repeat;
+	background-size: cover;
+	padding-bottom: 260px;
+}
 
+.presentation__content{
+	max-width:570px;
+	/* background: rgba(99,107,114,0.5);*/
+}
+
+.presentation__playButton{
+	margin-bottom: 40px;
+}
+
+.presentation__title{
+	margin-bottom: 25px;
+	font-size: 30px;
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+}
+
+.presentation__description{
+	font-size: 16px;
+	line-height: 28px;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+}
 
