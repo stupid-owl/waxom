@@ -285,11 +285,11 @@ display: flex;
 
 .item__bg:after{
 	content: ''; 
-    position: relative; /* Абсолютное позиционирование */
-    left: -150px; /* Положение треугольника */
+    position: relative; 
+    left: -150px; 
     bottom:-206px;
-	border: 15px solid transparent; /* Прозрачные границы */
-    border-bottom: 12px solid #fff; /* Добавляем треугольник */
+	border: 15px solid transparent; 
+    border-bottom: 12px solid #fff; 
 }
 
 .item__bg_1pic{
@@ -375,3 +375,57 @@ display: flex;
 	font-weight: 300;
 }
 
+.mobile__container{
+	display:flex;
+	max-width:1130px;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	margin-top: 75px;
+}
+
+.mobile__bgimage{
+	background:url('img/mobilebg.png') no-repeat;
+	background-size:cover;
+	min-width:450px;
+	min-height:615px;
+}
+
+.mobile__content{
+	max-width:665px;
+	text-align:left;
+	margin-top: 115px;
+}
+
+.mobile__title{
+	font-size: 30px;
+	color: #555555;
+	font-family: "Raleway";
+	font-weight: 600;
+	margin-bottom: 38px;
+}
+
+.mobile__description{
+	font-size: 16px;
+	line-height: 28px;
+	color: #8c8c8c;
+	font-family: "Montserrat";
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+
+.mobile__list{
+	display:flex;
+	flex-direction:column;
+	line-height: 32px;	
+	margin-left:50px;
+}
+
+.mobile__listEl{
+	background: url('img/04.png') 0px 50% no-repeat;
+	padding-left:50px;
+	font-size: 16px;
+	color: #8c8c8c;
+	font-family: "Montserrat";
+	font-weight: 300;
+}
