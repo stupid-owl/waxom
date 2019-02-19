@@ -596,3 +596,37 @@ display: flex;
 	padding:5px 0px;
 	border-radius:0px 0px 3px 3px ;
 }
+
+
+.partners__container{
+	padding-top:135px;
+	padding-bottom: 130px;
+	background:url('img/partners.png') 0px -400px no-repeat;
+	background-size:cover;
+	position: relative;
+}
+
+.partners__container:after{
+	content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background: rgba(0,0,0,.5);
+	  z-index: 2;
+	  background-size:cover;
+}
+
+.partners__logos{
+	display:flex;
+	margin:0 auto;
+	max-width:1120px;
+	justify-content:space-between;
+	flex-wrap:no-wrap;
+	flex-direction:row;
+}
+
+.partners__logo{
+	object-fit:contain;
+}
