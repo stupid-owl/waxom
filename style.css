@@ -440,7 +440,7 @@ display: flex;
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:space-between;
-	max-width:1000px;
+	max-width:950px;
 }
 
 .counters__item{
@@ -470,4 +470,129 @@ display: flex;
 	text-transform:uppercase;
 }
 
+.recentPosts__container{
+	padding-top: 80px;
+	max-width:1170px;
+}
 
+.recentPosts__title{
+	font-size: 30px;
+	color: #555555;
+	font-family: "Raleway";
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.recentPosts__description{
+	font-size: 16px;
+	line-height: 28px;
+	color: #8c8c8c;
+	font-family: "Montserrat";
+	font-weight: 300;
+	max-width:770px;
+	margin:0 auto;
+	margin-bottom: 40px;
+	
+}
+
+.recentPosts__recentPostsItems{
+	/*display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	flex-direction:row;*/
+	
+	display:grid;
+	max-width:1170px;
+	margin:0 auto;
+	grid-template-rows:repeat(1, 1fr);
+	grid-template-columns:repeat(auto-fit,370px);
+	justify-content: center;
+	grid-gap:30px;
+	margin-bottom:140px;	
+}
+
+.recentPostsItems__item{
+	width:370px;
+		
+}
+
+.recentPostsItems__pic{
+	height:220px;
+	position:relative;
+}
+
+.recentPostsItems__pic_first{
+	background: url('img/1post.png') no-repeat;
+}
+
+.recentPostsItems__pic_second{
+	background: url('img/2post.png') no-repeat;
+}
+
+.recentPostsItems__pic_third{
+	background: url('img/3post.png') no-repeat;
+}
+
+.recentPostsItems__text{
+	padding: 30px 30px;
+	text-align:left;
+	background-color: rgba(119,119,119,0);
+	border: 1px solid #f8f8f8;
+}
+
+.recentPostsItems__title{
+	font-size: 20px;
+	color: #555555;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.recentPostsItems__description{
+	font-size: 14px;
+	line-height: 22px;
+	color: #8c8c8c;
+	font-family: "Montserrat";
+	font-weight: 300;
+	margin-bottom: 25px;
+}
+
+.recentPostsItems__link{
+	font-size: 14px;
+	line-height: 20px;
+	color: #c7b299;
+	font-family: "Montserrat";
+	font-weight: 300;
+}
+
+.recentPostsItems__date{
+	width:50px;
+	height:60px;
+	position:absolute;
+	top:20px;
+	left:20px;
+	
+}
+
+.date__digit{
+	line-height: 20px;
+	color: #ffffff;
+	font-family: "Montserrat";
+	font-weight: 300;
+	text-align: center;
+	background:#363636;
+	padding:5px 0px;
+	border-radius:3px 3px 0px 0px;
+}
+
+.date__month{
+	font-size: 12px;
+	line-height: 20px;
+	color: #ffffff;
+	font-family: "Montserrat";
+	font-weight: 400;
+	text-align: center;
+	background:#242424;
+	padding:5px 0px;
+	border-radius:0px 0px 3px 3px ;
+}
