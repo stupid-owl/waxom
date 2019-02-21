@@ -348,11 +348,25 @@ display: flex;
 	background: url('img/presentationBg.png') center -140px no-repeat;
 	background-size: cover;
 	padding-bottom: 260px;
+	position:relative;
+}
+
+.presentation__container:after{
+	content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background: rgba(0,0,0,0.5);
+	  z-index: 2;
+	  background-size:cover;
 }
 
 .presentation__content{
 	max-width:570px;
-	/* background: rgba(99,107,114,0.5);*/
+	position:relative;
+	z-index: 3;
 }
 
 .presentation__playButton{
@@ -625,6 +639,8 @@ display: flex;
 	justify-content:space-between;
 	flex-wrap:no-wrap;
 	flex-direction:row;
+	position:relative;
+	z-index: 3;
 }
 
 .partners__logo{
