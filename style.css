@@ -22,27 +22,25 @@ ul{
 
 .description{
 	font-family: 'Montserrat', sans-serif;
-}
-
-.pageHeader{
-	
+	color: #8c8c8c;
 }
 
 .pageHeader__container{
-	max-width: 1190px;
-	height: 110px;
+	max-width:1170px;
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding:25px 0;
 }
 
 .logo{
 	max-width: 200px;
-	margin-right: auto;
+	margin-right: 15%;
 }
 
 .navi{
-	margin-right: 60px;
+	margin-right: 5%;
 }
 
 .naviList{
@@ -78,38 +76,43 @@ ul{
 }
 
 .cart{
-	margin-right: 22px;
+	margin-right: 2%;
 }
 
-
 .headerLayout{
-	height: 1024px;
+	max-height: 1024px;
 	background: url('img/bgPhoto.png') center center no-repeat;
 	background-size: cover;
+	padding-bottom: 15%;
 }
 
 .intro__container{
 	margin-top: 275px;
 	text-align: center;
-	color:#fff;
-	font-family: 'Raleway', sans-serif;
+	max-width:600px;
+	width:90%;
 }
 
 .topText{
-	
 	font-size: 36px;
 	font-weight: 400;
+	color: #ffffff;
 }
 .middleText{
 	margin-top: 20px;
 	font-weight: 800;
 	font-size: 52px;
+	color: #ffffff;
 }
 .bottomText{
 	max-width: 570px;
 	margin: 0 auto;
 	margin-top: 25px;
 	font-weight: 300;
+	color: #ffffff;
+	line-height: 24px;
+	font-size: 16px;
+
 }
 
 .button{
@@ -145,18 +148,19 @@ ul{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding-bottom: 90px;
+	max-width:1170px;
+	margin:0 auto;
 }
 
 .services__item{
 	margin-top: 75px;
 	max-width: 275px;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
 }
 
 .services__stripe{
 	height:30px;
-	width:70px;
+	width:26%;
 	margin:0 auto;
 	border-bottom:3px solid #f1eee9;
 }
@@ -178,56 +182,58 @@ ul{
 	font-size: 22px;
 	font-weight: 600;
 	margin-top: 25px;
-	color: #555555;
 }
 
 .services__description{
 	margin-top: 20px;
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
-	color: #8c8c8c;
 }
 
 .ideas{
-	font-family: 'Raleway', sans-serif;
-	height: 705px;
-	background: url('img/ideasbg.png') 50% 240px no-repeat;
 	background-color: #fbfaf8;
 	padding-top:80px ;
-
-	box-sizing: border-box;
 }
 
 .ideas__text{
 	max-width: 775px;
-	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.ideas__container{
+	display:grid;
+	grid-template-columns:auto;
+	grid-template-rows:repeat(2, auto);
+	justify-items: center;
+	margin:0 auto;
 }
 
 .ideas__title{
 	font-size: 30px;
 	font-weight: 600;
-	color: #555555;
 	margin-bottom: 30px;
 }
 
 .ideas__description{
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: #999999;
 	font-size: 16px;
-	max-width: 765px;
+	max-width: 90%;
 	margin: 0 auto;
 	line-height: 28px;
+}
+
+.ideas__imageContainer{
 
 }
 
-.puchaseStripe{
-	color:#fff;
+.ideas__image{
+	width:90%;
+	margin:0 auto;
+	height:100%
 }
 
 .puchaseStripe__title{
-	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 28px;
 }
@@ -237,7 +243,6 @@ ul{
 }	
 
 .puchaseStripe__definition{
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 	color: #615855;
@@ -248,13 +253,11 @@ ul{
   background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   min-width: 100%;
-  min-height: 150px;
-  
+  padding:45px 0;
 }
 
 .purchaseStripe__container{
-	padding-top: 45px;
-display: flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap:wrap;
@@ -271,12 +274,14 @@ display: flex;
 	text-align:left;
 }
 
+.projects__container{
+	padding-top:80px;
+}
 .projects__title{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	font-size: 30px;
 	color: #555555;
-	margin-top: 80px;
 }
 
 .projects__description{
@@ -435,7 +440,7 @@ display: flex;
 
 .presentation__container{
 	padding-top:210px;
-	background: url('img/presentationBg.png') center -140px no-repeat;
+	background: url('img/presentationBg.png') center 0 no-repeat;
 	background-size: cover;
 	padding-bottom: 260px;
 	position:relative;
@@ -483,7 +488,7 @@ display: flex;
 	display:flex;
 	max-width:1130px;
 	justify-content:space-around;
-	flex-wrap:wrap;
+	flex-wrap:wrap-reverse;
 	margin-top: 75px;
 }
 
@@ -707,7 +712,7 @@ display: flex;
 .partners__container{
 	padding-top:135px;
 	padding-bottom: 130px;
-	background:url('img/partners.png') 0px -400px no-repeat;
+	background:url('img/partners.png') 0 65% no-repeat;
 	background-size:cover;
 	position: relative;
 }
@@ -729,7 +734,9 @@ display: flex;
 	margin:0 auto;
 	max-width:1120px;
 	justify-content:space-between;
-	flex-wrap:no-wrap;
+	align-content:center;
+	align-items:center;
+	flex-wrap:nowrap;
 	flex-direction:row;
 	position:relative;
 	z-index: 3;
