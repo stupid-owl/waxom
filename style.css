@@ -143,12 +143,18 @@ ul{
 .intro__button {
 	margin-top: 55px;
 }
+
 .services{
+	width:100%;
+	padding-bottom: 90px;
+}
+
+.services__container{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	padding-bottom: 90px;
 	max-width:1170px;
+	width:90%;
 	margin:0 auto;
 }
 
@@ -198,6 +204,7 @@ ul{
 .ideas__text{
 	max-width: 775px;
 	margin-bottom: 70px;
+	width:90%;
 }
 
 .ideas__container{
@@ -887,4 +894,167 @@ ul{
 
 .leftBlock__element:not(:first-child):hover{
 	color: #c7b199;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	.navi{
+		display: none;
+	}
+	
+	.cart{
+		order: 1;
+	}
+
+	.cart__img{
+		width: 2em;
+	}
+
+	.logo{
+		order: 2;
+		margin:0 auto;
+	}
+
+	.search{
+		order: 3;
+	}
+
+	.search__img{
+		width: 2em;
+	}
+
+	.intro__container{
+		margin-top: 170px;
+	}
+
+	.button{
+		font-size: 1.1em;
+	}
+
+	.ideas__title {
+    font-size: 1.8em;
+	}
+
+	.puchaseStripe__text{
+		text-align: center;
+	}
+
+	.purchaseStripe__title{
+		font-size: 32px;
+	}
+
+	.puchaseStripe__definition{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.puchaseStripe__button{
+		margin-top: 20px;
+	}
+
+	.projects__container{
+		width:90%;
+	}
+
+	.toggles__button{
+		min-width: 90%;
+		margin-bottom: 10px;
+	}
+
+	/*.posts__item{
+		transform: scale(0.5);
+	} 
+		тут баг с rows-template у .posts
+	*/ 
+	.mobile__content{
+		margin-top: 0;
+		width: 90%;
+	}
+	.mobile__bgimage{
+		margin-top: 30px;
+		min-width: 280px;
+    	min-height: 415px;
+	}
+
+	.counters{
+		padding-top: 0;
+	}
+
+	.counters__item {
+	    width: 20%;
+	    transform: scale(0.6);
+	    margin-bottom: 0;
+	}
+
+	.counters__digit{
+		font-size: 36px;
+	}
+
+	.partners__logo {
+	    width: 8em;
+	    height: 6em;
+	}
+
+	.partners__container{
+		padding: 40px 0 40px; 
+	}
+
+	.partners__logos{
+		flex-wrap: wrap;
+	}
+
+	.partners__logo {
+	    width: 50%;
+	    height: 100px;
+	    margin-top: 20px;
+	}
+
+	.information__container {
+	    grid-template-rows: 300px 420px 330px;
+	    grid-template-columns: 1fr 1fr;
+	    grid-gap: 20px;
+	    width: 90%;
+	}
+	
+	.information__column{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	
+	.information__logoColumn,
+	.information__widgetColumn{
+		grid-column: 1/3;
+
+	}
+	.information__widgetColumn{
+		text-align: center;
+	}
+	
+	.copyright__leftBlock,
+	.copyright__container{
+		flex-wrap: wrap;
+	}
+
+	.leftBlock__element{
+		width: 90%;
+		padding:5px 0 5px;
+	}
+
+	.leftBlock__element:not(:first-child){
+		border: none;
+	}
+
+	.copyright__rightBlock,
+	.copyright__leftBlock{
+		margin: 0 auto;
+		justify-content: space-around;
+	}
+
+	.copyright__rightBlock{
+		margin-top: 20px;
+	}
+
+	.rightBlock__element{
+		padding: 0 10px;
+	}
 }
