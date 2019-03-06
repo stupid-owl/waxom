@@ -9,53 +9,54 @@
 
 </head>
 <body>
-	<div class="header__wrapper">
-		<section class="headerLayout">
-			<header class="pageHeader">
+	<section class="headerLayout">
+			<div class="header__wrapper">
 				<div class="container pageHeader__container">
-					<div class="logo">
-						<img src="img/waxomLogo.png" alt="Waxom(logo)" class="logoPic">
+					<header class="pageHeader container_flexbox">
+							<div class="logo">
+								<img src="img/waxomLogo.png" alt="Waxom(logo)" class="logoPic">
+							</div>
+							<nav class="navi">
+								<ul class="naviList container_flexbox">
+									<li class="naviElement description"><a href="#" class="naviLink description">Home</a></li>
+									<li class="naviElement description"><a href="#" class="naviLink description">About Us</a></li>
+									<li class="naviElement description"><a href="#" class="naviLink description">Portfolio</a></li>
+									<li class="naviElement description"><a href="#" class="naviLink description">Services</a></li>
+									<li class="naviElement description"><a href="#" class="naviLink description">Blog</a></li>
+									<li class="naviElement description"><a href="#" class="naviLink description">Pricing</a></li>
+									<li class="naviElement description"><a href="#" class="naviLink description">Shortcodes</a></li>
+									<li class="naviElement description"><a href="#" class="naviLink description">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="cart">
+								<a href="#" class="cart__link">
+									<img src="img/iconCart.png" alt="" class="cart__img">
+								</a>
+							</div>
+							<div class="search">
+								<img src="img/iconSearch.png" alt="" class="search__img">
+							</div>
+					</header>					
+				
+					<div class="intro">
+						<div class="container intro__container">
+							<h3 class="topText title title_white">
+								Unique and Modern Design
+							</h3>
+							<h1 class="middleText title title_white">
+								Portfolio PSD Template
+							</h1>
+							<p class="bottomText description description_white">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
+							<button class="intro__button button description description_white">
+								Get Started
+							</button>
+						</div>
 					</div>
-					<nav class="navi">
-						<ul class="naviList">
-							<li class="naviElement"><a href="#" class="naviLink description">Home</a></li>
-							<li class="naviElement"><a href="#" class="naviLink description">About Us</a></li>
-							<li class="naviElement"><a href="#" class="naviLink description">Portfolio</a></li>
-							<li class="naviElement"><a href="#" class="naviLink description">Services</a></li>
-							<li class="naviElement"><a href="#" class="naviLink description">Blog</a></li>
-							<li class="naviElement"><a href="#" class="naviLink description">Pricing</a></li>
-							<li class="naviElement"><a href="#" class="naviLink description">Shortcodes</a></li>
-							<li class="naviElement"><a href="#" class="naviLink description">Contact</a></li>
-						</ul>
-					</nav>
-					<div class="cart">
-						<a href="#" class="cart__link">
-							<img src="img/iconCart.png" alt="" class="cart__img">
-						</a>
-					</div>
-					<div class="search">
-						<img src="img/iconSearch.png" alt="" class="search__img">
-					</div>	
-				</div>
-			</header>
-			<div class="intro">
-				<div class="container intro__container">
-					<h3 class="topText title">
-						Unique and Modern Design
-					</h3>
-					<h1 class="middleText title">
-						Portfolio PSD Template
-					</h1>
-					<p class="bottomText description">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-					<button class="intro__button button">
-						Get Started
-					</button>
 				</div>
 			</div>
 		</section>
-	</div>
 	<section class="services">
-		<div class="services__container container">
+		<div class="services__container container container_flexbox">
 			<div class="services__item">
 				<img src="img/webDesignIcon.png" alt="" class="services__img services__img_big">
 				<h3 class="services__title title">Web & App Design</h3>
@@ -87,18 +88,15 @@
 			<div class="ideas__text text">
 				<h2 class="ideas__title title">Waxom is Realization of your Ideas.</h2>
 				<p class="ideas__description description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-			</div>
-			<div>
-				<img src="img/ideasbg.png" alt="" class="ideas__image">
-			</div>
+			</div>	
+			<img src="img/ideasbg.png" alt="" class="ideas__image">
 		</div>
 	</section>
 	<section class="puchaseStripe">
-		<div class="purchaseStripe__container container">
+		<div class="purchaseStripe__container container container_flexbox">
 			<div class="puchaseStripe__part puchaseStripe__text">
-			<h2 class="puchaseStripe__title title"><span class="puchaseStripe__colored">Waxom</span> Multipurpose WordPress Theme</h2>
+			<h2 class="puchaseStripe__title title"><span class="puchaseStripe__title_colored">Waxom</span> Multipurpose WordPress Theme</h2>
 			<p class="puchaseStripe__definition definition">Don't Forget to Rate the Template. Thanks so much!</p></div>
-
 			<div class="puchaseStripe__part"><button class="button puchaseStripe__button">purchase now</button></div>
 		</div>
 	</section>

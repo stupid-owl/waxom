@@ -1,3 +1,5 @@
+/* COMMON STYLES */
+
 *{
 	padding: 0;
 	margin: 0;
@@ -13,6 +15,16 @@ ul{
 .container{
 	margin: 0 auto;
 	text-align: center;
+	max-width:1170px;
+	width: 98%;
+	padding:0 2%;
+	box-sizing:border-box;
+}
+
+.container_flexbox{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .title{
@@ -25,11 +37,20 @@ ul{
 	color: #8c8c8c;
 }
 
-.pageHeader__container{
-	max-width:1170px;
-	width: 90%;
-	display: flex;
-	justify-content: space-between;
+.title_white{
+	color: #ffffff;
+}
+
+.description_white{
+	color: #ffffff;
+}
+
+.
+
+/* HEADER */
+
+.pageHeader{
+	flex-wrap: nowrap;
 	align-items: center;
 	padding:25px 0;
 }
@@ -41,25 +62,22 @@ ul{
 
 .navi{
 	margin-right: 5%;
+	flex-grow:2;
 }
 
 .naviList{
 	display: flex;
 	flex-wrap: wrap;
-	
+    justify-content: space-between;	
 }
 
 .naviElement{
 	text-align: center;
 	flex: 1 1 auto;
 	white-space:nowrap;
-	font-size: 14px;
-	color:#ffffff;
 	word-wrap: normal;
-	font-family: 'Montserrat', sans-serif;
-	padding:0 15px;
+	padding:0 1%;
 }
-
 
 .naviLink{
 	font-size: 14px;
@@ -79,37 +97,29 @@ ul{
 	margin-right: 2%;
 }
 
-.headerLayout{
-	max-height: 1024px;
+.header__wrapper{
 	background: url('img/bgPhoto.png') center center no-repeat;
 	background-size: cover;
 	padding-bottom: 15%;
 }
 
-.intro__container{
+.intro{
 	margin-top: 275px;
-	text-align: center;
-	max-width:600px;
-	width:90%;
 }
 
 .topText{
 	font-size: 36px;
 	font-weight: 400;
-	color: #ffffff;
+	
 }
 .middleText{
 	margin-top: 20px;
 	font-weight: 800;
 	font-size: 52px;
-	color: #ffffff;
 }
 .bottomText{
-	max-width: 570px;
-	margin: 0 auto;
 	margin-top: 25px;
 	font-weight: 300;
-	color: #ffffff;
 	line-height: 24px;
 	font-size: 16px;
 
@@ -117,16 +127,15 @@ ul{
 
 .button{
 	padding:20px 35px;
-	font-family: "Raleway";
 	font-size: 14px;
 	font-weight: 800;
 	background-color: #998675;
 	text-transform: uppercase;
 	border-radius: 5px;
 	border:none;
-	color:#fff;
 	outline:none;
 	text-decoration: none;
+	color:#fff;
 }
 
 .button:hover{
@@ -144,18 +153,16 @@ ul{
 	margin-top: 55px;
 }
 
+/* SERVICES SECTION */
+
 .services{
 	width:100%;
 	padding-bottom: 90px;
 }
 
 .services__container{
-	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
-	max-width:1170px;
-	width:90%;
-	margin:0 auto;
+	max-width:85%;
 }
 
 .services__item{
@@ -196,15 +203,16 @@ ul{
 	font-weight: 300;
 }
 
+/* IDEAS SECTION */
+
 .ideas{
 	background-color: #fbfaf8;
 	padding-top:80px ;
 }
 
 .ideas__text{
-	max-width: 775px;
-	margin-bottom: 70px;
-	width:90%;
+	padding-bottom: 70px;
+	max-width:70%;
 }
 
 .ideas__container{
@@ -225,27 +233,22 @@ ul{
 	font-weight: 300;
 	color: #999999;
 	font-size: 16px;
-	max-width: 90%;
-	margin: 0 auto;
 	line-height: 28px;
-}
-
-.ideas__imageContainer{
-
 }
 
 .ideas__image{
 	width:90%;
 	margin:0 auto;
-	height:100%
 }
+
+/* PURCHASE STRIPE SECTION */
 
 .puchaseStripe__title{
 	font-weight: 400;
 	font-size: 28px;
 }
 
-.puchaseStripe__colored{
+.puchaseStripe__title_colored{
 	color: #847464;
 }	
 
@@ -259,27 +262,22 @@ ul{
   background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-  min-width: 100%;
   padding:45px 0;
 }
 
 .purchaseStripe__container{
-  display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap:wrap;
-  align-content:center;
 }
 
 .puchaseStripe__button{
-	margin-top:0;
-	font-size: 14px;
 	padding:18px 27px;
 }
 
 .puchaseStripe__text{
 	text-align:left;
 }
+
+/* PROJECTS SECTION */
 
 .projects__container{
 	padding-top:80px;
