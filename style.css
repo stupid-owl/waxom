@@ -27,6 +27,12 @@ ul{
     justify-content: space-between;
 }
 
+.container_grid{
+	display: grid;
+	justify-items:center; 
+    justify-content: center;
+}
+
 .title{
 	color: #555555;
 	font-family: 'Raleway', sans-serif;
@@ -44,8 +50,6 @@ ul{
 .description_white{
 	color: #ffffff;
 }
-
-.
 
 /* HEADER */
 
@@ -216,11 +220,8 @@ ul{
 }
 
 .ideas__container{
-	display:grid;
 	grid-template-columns:auto;
 	grid-template-rows:repeat(2, auto);
-	justify-items: center;
-	margin:0 auto;
 }
 
 .ideas__title{
@@ -281,40 +282,35 @@ ul{
 
 .projects__container{
 	padding-top:80px;
+	max-width: 90%;
 }
 .projects__title{
-	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	font-size: 30px;
-	color: #555555;
 }
 
 .projects__description{
-	max-width: 770px;
+	max-width: 60%;
 	margin:0 auto;
-	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
-	color: #8c8c8c;	
 	font-weight: 300;
-	text-align: center;
 	margin-top: 28px;
 	line-height: 28px;
 }
 
 .toggles {
-	margin:40px auto;
-	max-width:605px;
-	display:flex;
+	margin:20px auto;
+	max-width:50%;
 	justify-content:space-around;
-	flex-wrap:wrap;
+	padding: 10px 0;
 	
 }
 
 .toggles__button{
 	min-width: 70px;
+	margin:1% 1%;
+	margin-bottom: 10px;
 	padding:10px 16px;
-	font-size: 14px;
-	font-family: "Montserrat", sans-serif;
 	color: #8c8c8c;
 	font-weight: 300;
 	background:transparent;
@@ -330,12 +326,9 @@ ul{
 }
 
 .posts{
-	display:grid;
-	max-width:1170px;
-	margin:0 auto;
+	max-width:90%;
 	grid-template-rows:repeat(2, 1fr);
 	grid-template-columns:repeat(auto-fit,370px);
-	justify-content: center;
 	grid-gap:30px;	
 }
 
@@ -343,9 +336,12 @@ ul{
 	width:370px;	
 }
 
-
 .posts__item:hover > .item__text{
 	background-color:#352f2d;
+	transition:0.3s;
+}
+.posts__item:hover .item__bg:before{
+	background: rgba(0,0,0,0.5);
 	transition:0.3s;
 }
 
@@ -364,7 +360,9 @@ ul{
 .posts__item:hover .item__bg:after{
 	border-bottom-color:#352f2d;
 	transition:0.3s;
+	z-index: 2;
 }
+
 
 .posts__item:hover .date__digit{
 	background-color:#c7b199;
@@ -376,7 +374,7 @@ ul{
 }
 
 .item__bg{
-	height:235px;
+	padding:108.5px 0;
 	position: relative;
 }
 
@@ -389,7 +387,16 @@ ul{
     border-bottom: 12px solid #fff; 
 }
 
-
+.item__bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-size: cover;
+}
 
 .item__bg_1pic{
 	background: url('img/project1.png') 0 -15px no-repeat;
@@ -421,11 +428,9 @@ ul{
 	padding:29px 25px;
 }
 
-
 .item__title{
 	font-size: 20px;
 	color: #c7b299;
-	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 	margin-bottom: 10px;
 }
@@ -433,7 +438,6 @@ ul{
 .item__description{
 	font-size: 14px;
 	color: #d1d1d1;
-	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 }
 
@@ -449,6 +453,8 @@ ul{
 	background-size: cover;
 	padding-bottom: 260px;
 	position:relative;
+	width:100%;
+	max-width: 100%;
 }
 
 .presentation__container:after{
@@ -476,8 +482,6 @@ ul{
 .presentation__title{
 	margin-bottom: 25px;
 	font-size: 30px;
-	color: #ffffff;
-	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 }
 
@@ -485,14 +489,11 @@ ul{
 	font-size: 16px;
 	line-height: 28px;
 	color: #ffffff;
-	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 }
 
 .mobile__container{
-	display:flex;
-	max-width:1130px;
-	justify-content:space-around;
+	max-width:70%;
 	flex-wrap:wrap-reverse;
 	margin-top: 75px;
 }
@@ -513,7 +514,6 @@ ul{
 .mobile__title{
 	font-size: 30px;
 	color: #555555;
-	font-family: "Raleway";
 	font-weight: 600;
 	margin-bottom: 38px;
 }
@@ -521,15 +521,11 @@ ul{
 .mobile__description{
 	font-size: 16px;
 	line-height: 28px;
-	color: #8c8c8c;
-	font-family: "Montserrat";
 	font-weight: 300;
 	margin-bottom: 40px;
 }
 
-
 .mobile__list{
-	display:flex;
 	flex-direction:column;
 	line-height: 32px;	
 	margin-left:50px;
@@ -539,8 +535,6 @@ ul{
 	background: url('img/04.png') 0px 50% no-repeat;
 	padding-left:50px;
 	font-size: 16px;
-	color: #8c8c8c;
-	font-family: "Montserrat";
 	font-weight: 300;
 }
 
@@ -550,11 +544,7 @@ ul{
 }
 
 .counters__container{
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	max-width:950px;
+	width:70%;
 }
 
 .counters__item{
@@ -569,8 +559,6 @@ ul{
 .counters__digit{
 	font-size: 48px;
 	line-height: 36px;
-	color: #ffffff;
-	font-family: "Montserrat";
 	font-weight: 300;
 	margin-bottom: 20px;
 }
@@ -579,20 +567,16 @@ ul{
 	font-size: 14px;
 	line-height: 20px;
 	color: #c7b299;
-	font-family: "Montserrat";
 	font-weight: 300;
 	text-transform:uppercase;
 }
 
 .recentPosts__container{
 	padding-top: 80px;
-	max-width:1170px;
 }
 
 .recentPosts__title{
 	font-size: 30px;
-	color: #555555;
-	font-family: "Raleway";
 	font-weight: 600;
 	margin-bottom: 30px;
 }
@@ -600,8 +584,6 @@ ul{
 .recentPosts__description{
 	font-size: 16px;
 	line-height: 28px;
-	color: #8c8c8c;
-	font-family: "Montserrat";
 	font-weight: 300;
 	max-width:770px;
 	margin:0 auto;
