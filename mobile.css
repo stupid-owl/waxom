@@ -335,7 +335,6 @@
 		padding-right: 1px;
 	}
 }
-
 @media only screen and (min-width : 481px) and (max-width : 600px) {
 	*{
 		overflow-x: hidden;
@@ -689,18 +688,23 @@
 		margin-top: 20px;
 		justify-content:space-around;
 	}
-
-	.rightBlock__element{
-		width:140px;
-		padding:0;
-		
-	}
 	
+	.copyright__container{
+			width: 90%;
+		}
+	.copyright__rightBlock{
+			width:400px;
+		}
+	.rightBlock__element{
+			width: 188px;
+			padding:0;
+			
+		}
+
 	.rightBlock__element:not(:last-child){
 		padding-right: 1px;
 	}
 }
-
 @media only screen and (min-width : 601px) and (max-width : 768px) {
 	*{
 		overflow-x: hidden;
@@ -823,6 +827,7 @@
 	
 	.purchaseStripe__text{
 		text-align: center;
+		width: 100%;
 	}
 
 	.purchaseStripe__title{
@@ -1055,6 +1060,18 @@
 		text-align: center;
 	}
 	
+	.copyright__container{
+		width: 80%;
+	}
+	.copyright__rightBlock{
+			width:400px;
+		}
+	.rightBlock__element{
+			width: 199px;
+			padding:0;
+			
+		}
+
 	.copyright__leftBlock,
 	.copyright__container{
 		flex-wrap: wrap;
@@ -1080,17 +1097,11 @@
 		justify-content:space-around;
 	}
 
-	.rightBlock__element{
-		width:140px;
-		padding:0;
-		
-	}
 	
 	.rightBlock__element:not(:last-child){
 		padding-right: 1px;
 	}
 }
-
 @media only screen and (min-width : 769px) and (max-width : 1024px) {
 	
 	/* HEADER */
@@ -1108,10 +1119,6 @@
 		font-size: 0.7em;
 	}
 
-	.cart{
-		
-	}
-
 	.cart__img,
 	.search__img{
 		width: 1.2em;
@@ -1122,13 +1129,10 @@
 		width: 20%;
 	}
 
-	.logoPic{
-		width: 100%;	
+	.header__logo{
+		width: 80%;	
 	}
-
-	.search{
-
-	}
+	
 	
 	.intro{
 		margin-top:0;
@@ -1170,7 +1174,7 @@
 	}
 	
 	.services__item{
-		width:45%;
+		max-width: 50%;
 		margin-top:30px;
 	}
 	
@@ -1182,6 +1186,7 @@
 	.services__description{
 		font-size: 12px;
 		margin-top: 9px;
+		padding: 0 10%;
 	}
 
 	.services__stripe {
@@ -1219,6 +1224,7 @@
 	
 	.purchaseStripe__text{
 		text-align: center;
+		width: 100%;
 	}
 
 	.purchaseStripe__title{
@@ -1441,6 +1447,10 @@
 	}
 
 	/* FOOTER SECTION */
+
+	.logoColumn__logoPic {
+    	width: 40%;
+    }
 	
 	.information__logoColumn,
 	.information__widgetColumn{
@@ -1451,6 +1461,10 @@
 		text-align: center;
 	}
 	
+	.copyright__container{
+		width: 80%;
+	}
+
 	.copyright__leftBlock,
 	.copyright__container{
 		flex-wrap: wrap;
@@ -1464,6 +1478,15 @@
 	.leftBlock__element:not(:first-child){
 		border: none;
 	}
+	
+	.copyright__rightBlock{
+		width:400px;
+	}
+	
+	.copyright__leftBlock{
+		width:90%;
+	}
+
 
 	.copyright__rightBlock,
 	.copyright__leftBlock{
@@ -1477,7 +1500,7 @@
 	}
 
 	.rightBlock__element{
-		width:140px;
+		width: 199px;
 		padding:0;
 		
 	}
