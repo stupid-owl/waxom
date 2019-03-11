@@ -24,6 +24,10 @@
 		order: 2;
 		margin:0 auto;
 	}
+	
+	.header__logo{
+		width: 70%;
+	}
 
 	.search{
 		order: 3;
@@ -326,7 +330,7 @@
 	}
 
 	.rightBlock__element{
-		width:140px;
+		width: 49%;
 		padding:0;
 		
 	}
@@ -364,6 +368,10 @@
 		margin:0 auto;
 	}
 
+	.header__logo{
+		width: 70%;
+	}
+	
 	.search{
 		order: 3;
 	}
@@ -696,7 +704,7 @@
 			width:400px;
 		}
 	.rightBlock__element{
-			width: 188px;
+			width: 199px;
 			padding:0;
 			
 		}

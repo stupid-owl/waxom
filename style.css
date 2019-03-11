@@ -171,7 +171,7 @@ ul{
 
 .services__item{
 	margin-top: 75px;
-	max-width: 275px;
+	max-width: 205px;
 	text-align: center;
 }
 
@@ -300,7 +300,7 @@ ul{
 
 .toggles {
 	margin:20px auto;
-	max-width:50%;
+	max-width:70%;
 	justify-content:space-around;
 	padding: 10px 0;
 	
@@ -326,7 +326,6 @@ ul{
 }
 
 .posts{
-	max-width:90%;
 	grid-template-rows:repeat(2, 1fr);
 	grid-template-columns:repeat(auto-fit,370px);
 	grid-gap:30px;	
@@ -381,8 +380,8 @@ ul{
 .item__bg:after{
 	content: ''; 
     position: relative; 
-    left: -150px; 
-    bottom:-206px;
+    left: -36%; 
+    bottom:-99px;
 	border: 15px solid transparent; 
     border-bottom: 12px solid #fff; 
 }
@@ -506,15 +505,15 @@ ul{
 .mobile__bgimage{
 	background:url('img/mobilebg.png') no-repeat;
 	background-size:cover;
-	min-width:420px;
+	min-width:50%;
 	min-height:615px;
 }
 
 .mobile__content{
-	max-width:47%;
-	min-width:515px;
+	max-width:50%;
 	text-align:left;
 	margin-top: 115px;
+	margin-bottom:100px;
 }
 
 .mobile__title{
@@ -751,8 +750,8 @@ ul{
 
 .information__container{
 	grid-template-rows:repeat(1, 1fr);
-	grid-template-columns:repeat(auto-fit,270px);
-	grid-gap:30px;
+	grid-template-columns:repeat(auto-fit,22%);
+	grid-gap:2%;
 	padding-top:80px;
 	max-width:100%;
 }
@@ -855,7 +854,7 @@ ul{
 
 .copyright__container{
 	align-items: center;
-	width:auto;
+	width:85%;
 	padding:45px 0 50px;
 }
 
