@@ -207,6 +207,12 @@
 		margin-top: 30px;
 		min-width: 280px;
     	min-height: 415px;
+		background:url('img/mobilebg.png') no-repeat;
+		background-size:cover;
+	}
+	
+	.mobile__pic{
+		display:none;
 	}
 
 	.mobile__list{
@@ -579,7 +585,14 @@
 		margin-top: 30px;
 		min-width: 280px;
     	min-height: 415px;
+		background:url('img/mobilebg.png') no-repeat;
+		background-size:cover;
 	}
+	
+	.mobile__pic{
+		display:none;
+	}
+	
 
 	.mobile__list{
 		margin-left:0;
@@ -782,11 +795,11 @@
 	}
 	
 	.services__container{
-		max-width:98%;
+		max-width:85%;
 	}
 	
 	.services__item{
-		width:45%;
+		max-width:35%;
 		margin-top:30px;
 	}
 	
@@ -951,6 +964,12 @@
 		margin-top: 30px;
 		min-width: 280px;
     	min-height: 415px;
+		background:url('img/mobilebg.png') no-repeat;
+		background-size:cover;
+	}
+	
+	.mobile__pic{
+		display:none;
 	}
 
 	.mobile__list{
@@ -1178,11 +1197,11 @@
 	}
 	
 	.services__container{
-		max-width:98%;
+		max-width:85%;
 	}
 	
 	.services__item{
-		max-width: 50%;
+		max-width: 35%;
 		margin-top:30px;
 	}
 	

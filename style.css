@@ -503,18 +503,19 @@ ul{
 }
 
 .mobile__bgimage{
-	background:url('img/mobilebg.png') no-repeat;
-	background-size:cover;
-	min-width:50%;
-	min-height:615px;
+	max-width: 45%;
+}
+
+.mobile__pic{
+	vertical-align: bottom;
 }
 
 .mobile__content{
-	max-width:50%;
-	text-align:left;
-	margin-top: 115px;
-	margin-bottom:100px;
+	max-width: 55%;
+    text-align: left;
+    margin-top: 115px;
 }
+
 
 .mobile__title{
 	font-size: 30px;
